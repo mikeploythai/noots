@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: rgb(15 23 42);
+}
+
+/* Line clamp without installing the plugin. */
+/* https://github.com/tailwindlabs/tailwindcss-line-clamp */
+.line-clamp-4 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}

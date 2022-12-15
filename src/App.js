@@ -1,12 +1,18 @@
-import "./App.css";
+import { useState } from "react";
 import Dashboard from "./components/dashboard";
+import Footer from "./components/footer";
+import GapFill from "./components/gap-fill";
 import Nav from "./components/nav";
 
 function App() {
+  const [auth, setAuth] = useState(false);
+
   return (
-    <div className="relative flex flex-col gap-8 p-8 min-h-screen w-screen bg-slate-900 text-slate-100">
-      <Nav />
-      <Dashboard />
+    <div className="grid grid-rows-[min-content_1fr_min-content] auto-cols-fr min-h-screen">
+      <Nav auth={auth} setAuth={setAuth} />
+      <GapFill />
+      <Dashboard auth={auth} />
+      <Footer />
     </div>
   );
 }
