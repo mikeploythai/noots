@@ -15,6 +15,8 @@ export default function Modal({
   if (show.active === true) {
     return (
       <>
+        {/* referenced React docs for createPortal */}
+        {/* https://beta.reactjs.org/apis/react-dom/createPortal */}
         {show.id === id &&
           createPortal(
             <div className="fixed inset-0 flex justify-center items-center text-slate-100 bg-slate-900/50 z-20">
