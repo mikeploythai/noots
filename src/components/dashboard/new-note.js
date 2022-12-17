@@ -1,7 +1,14 @@
+import { useState } from "react";
 import PencilIcon from "../icons/pencil-icon";
 import Modal from "../modal";
 
 export default function NewNote({ show, setShow, auth }) {
+  const [note, setNote] = useState({ type: "new" });
+
+  function resetFields() {
+    setNote({ type: "new" });
+  }
+
   return (
     <>
       <button
@@ -20,15 +27,28 @@ export default function NewNote({ show, setShow, auth }) {
         </p>
       </button>
 
-      <Modal show={show} setShow={setShow}>
+      <Modal
+        show={show}
+        setShow={setShow}
+        note={note}
+        resetFields={resetFields}
+      >
         <input
           className="w-full text-xl font-semibold bg-transparent truncate focus:outline-none"
           placeholder="add a title"
+          value={note.title}
+          onChange={(e) => {
+            setNote({ ...note, title: e.target.value });
+          }}
           autoFocus
         />
         <textarea
           className="h-full text-sm bg-transparent resize-none focus:outline-none"
           placeholder="start writing away!"
+          value={note.content}
+          onChange={(e) => {
+            setNote({ ...note, content: e.target.value });
+          }}
         />
       </Modal>
     </>
