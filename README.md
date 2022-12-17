@@ -1,5 +1,7 @@
 ### noots.
 
+> NOTICE: LINUX ONLY
+
 | Group 9         |
 | --------------- |
 | Mike Ploythai   |
@@ -47,4 +49,4 @@ PASSWORD: unsafepassword
 
 ---
 
-*This app is also designed mobile-first. Try visiting the local network link (provided by the React local server) on your mobile device!*
+_This app is also designed mobile-first. Try visiting the local network link (provided by the React local server) on your mobile device!_
