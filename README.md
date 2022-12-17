@@ -29,7 +29,7 @@
    npm run all
    ```
 
-3. To view the Pocketbase dashboard, visit [http://localhost:8090/\_/](http://localhost:8090/_/)
+3. To view the app in the browser, visit [http://localhost:3000](http://localhost:3000). To view the Pocketbase dashboard, visit [http://localhost:8090/_/](http://localhost:8090/_/)
 
 ###### ACCOUNT CREDENTIALS FOR DEMONSTRATION
 
