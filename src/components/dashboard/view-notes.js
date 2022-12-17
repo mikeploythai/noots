@@ -39,7 +39,6 @@ export default function ViewNotes({ notes, show, setShow }) {
                 onChange={(e) => {
                   setEdit({ ...edit, title: e.target.value });
                 }}
-                autoFocus
               />
               <textarea
                 className="h-full text-sm bg-transparent resize-none focus:outline-none"
@@ -48,6 +47,7 @@ export default function ViewNotes({ notes, show, setShow }) {
                 onChange={(e) => {
                   setEdit({ ...edit, content: e.target.value });
                 }}
+                autoFocus
               />
             </Modal>
           </div>

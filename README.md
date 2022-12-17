@@ -28,3 +28,23 @@
    ```
 
 3. To view the Pocketbase dashboard, visit [http://localhost:8090/\_/](http://localhost:8090/_/)
+
+###### ACCOUNT CREDENTIALS FOR DEMONSTRATION
+
+```c
+// Pocketbase dashboard
+EMAIL: fakeemail@service.com
+PASSWORD: greatpassword
+
+// User 1
+USERNAME: user1
+PASSWORD: safepassword
+
+// User 2
+USERNAME: user2
+PASSWORD: unsafepassword
+```
+
+---
+
+*This app is also designed mobile-first. Try visiting the local network link (provided by the React local server) on your mobile device!*
